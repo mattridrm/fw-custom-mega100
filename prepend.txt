@@ -5,3 +5,5 @@
 
 #define GPPWM_LOAD_COUNT 16
 #define GPPWM_RPM_COUNT 16
+
+#define LUA_USER_HEAP 100000
