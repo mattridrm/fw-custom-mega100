@@ -3,5 +3,9 @@
 ! board has zero LEDs
 #define ts_show_status_leds false
 
+#define EFI_BOOST_CONTROL FALSE
+#define EFI_LAUNCH_CONTROL FALSE
+#define EFI_ANTILAG_SYSTEM FALSE
+#define EFI_TOOTH_LOGGER FALSE
 #define GPPWM_LOAD_COUNT 16
 #define GPPWM_RPM_COUNT 16
