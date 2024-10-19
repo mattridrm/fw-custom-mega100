@@ -1,7 +1,2 @@
 ! this file is used to define custom board-specific calibrations
 ! see also extra.txt for board-specific data points
-
-#define EFI_BOOST_CONTROL FALSE
-#define EFI_LAUNCH_CONTROL FALSE
-#define EFI_ANTILAG_SYSTEM FALSE
-#define EFI_TOOTH_LOGGER FALSE
