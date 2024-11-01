@@ -11,5 +11,8 @@ include $(BOARD_DIR)/meta-info.env
 # reduce memory usage monitoring
 DDEFS += -DRAM_UNUSED_SIZE=100
 
+# increase Lua Heap
+DDEFS += -DLUA_USER_HEAP=35000
+
 # assign critical LED to a non-existent pin
 DDEFS += -DLED_CRITICAL_ERROR_BRAIN_PIN=Gpio::I15
