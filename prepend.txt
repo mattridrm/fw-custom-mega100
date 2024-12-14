@@ -11,3 +11,5 @@
 
 ! board has zero LEDs
 #define ts_show_status_leds false
+#define GPPWM_RPM_COUNT 16
+#define GPPWM_LOAD_COUNT 16
