@@ -9,7 +9,7 @@ struct vvt_s {
 	 * units: deg
 	 * offset 0
 	 */
-	scaled_channel<uint16_t, 10, 1> vvtTarget = (uint16_t)0;
+	scaled_channel<int16_t, 10, 1> vvtTarget = (int16_t)0;
 	/**
 	 * units: %
 	 * offset 2
@@ -20,7 +20,7 @@ struct vvt_s {
 	 * units: units
 	 * offset 3
 	 */
-	uint8_t alignmentFill_at_3[1];
+	uint8_t alignmentFill_at_3[1] = {};
 };
 static_assert(sizeof(vvt_s) == 4);
 

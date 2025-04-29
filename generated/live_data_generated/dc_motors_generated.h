@@ -7,13 +7,13 @@
 struct dc_motors_s {
 	/**
 	 * "DC: output0"
-	 * units: per
+	 * units: %
 	 * offset 0
 	 */
 	float dcOutput0 = (float)0;
 	/**
 	 * "DC: en0"
-	 * units: per
+	 * units: %
 	 * offset 4
 	 */
 	uint8_t isEnabled0_int = (uint8_t)0;
@@ -22,7 +22,7 @@ struct dc_motors_s {
 	 * units: units
 	 * offset 5
 	 */
-	uint8_t alignmentFill_at_5[3];
+	uint8_t alignmentFill_at_5[3] = {};
 	/**
 	offset 8 bit 0 */
 	bool isEnabled0 : 1 {};

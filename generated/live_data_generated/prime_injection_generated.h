@@ -1,14 +1,14 @@
-// this section was generated automatically by rusEFI tool config_definition_base-all.jar based on (unknown script) controllers/math/throttle_model.txt
+// this section was generated automatically by rusEFI tool config_definition_base-all.jar based on (unknown script) controllers/engine_cycle/prime_injection.txt
 // by class com.rusefi.output.CHeaderConsumer
 // begin
 #pragma once
 #include "rusefi_types.h"
-// start of throttle_model_s
-struct throttle_model_s {
+// start of prime_injection_s
+struct prime_injection_s {
 	/**
-	 * Air: Throttle model WOT
+	 * "IsFuelPriming"
 	offset 0 bit 0 */
-	bool throttleUseWotModel : 1 {};
+	bool m_isPriming : 1 {};
 	/**
 	offset 0 bit 1 */
 	bool unusedBit_1_1 : 1 {};
@@ -102,26 +102,8 @@ struct throttle_model_s {
 	/**
 	offset 0 bit 31 */
 	bool unusedBit_1_31 : 1 {};
-	/**
-	 * Air: Throttle crossover pos
-	 * units: %
-	 * offset 4
-	 */
-	scaled_channel<int16_t, 100, 1> throttleModelCrossoverAngle = (int16_t)0;
-	/**
-	 * need 4 byte alignment
-	 * units: units
-	 * offset 6
-	 */
-	uint8_t alignmentFill_at_6[2] = {};
-	/**
-	 * Air: Throttle flow estimate
-	 * units: g/s
-	 * offset 8
-	 */
-	float throttleEstimatedFlow = (float)0;
 };
-static_assert(sizeof(throttle_model_s) == 12);
+static_assert(sizeof(prime_injection_s) == 4);
 
 // end
-// this section was generated automatically by rusEFI tool config_definition_base-all.jar based on (unknown script) controllers/math/throttle_model.txt
+// this section was generated automatically by rusEFI tool config_definition_base-all.jar based on (unknown script) controllers/engine_cycle/prime_injection.txt
