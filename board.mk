@@ -1,7 +1,6 @@
 BOARDCPPSRC =  $(BOARD_DIR)/board_configuration.cpp \
     $(BOARD_DIR)/firmware/pinouts.cpp \
 
-
 BOARDINC += $(BOARD_DIR)/generated/controllers/generated
 
 # defines SHORT_BOARD_NAME
