@@ -8,6 +8,8 @@
 #define ts_show_hip9011 true
 #define show_tcu_gauges true
 #define MAX_TPS_PPS_DISCREPANCY 10
+#define GPPWM_RPM_COUNT 16
+#define GPPWM_LOAD_COUNT 16
 
 ! board has zero LEDs
 #define ts_show_status_leds false
